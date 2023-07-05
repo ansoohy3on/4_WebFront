@@ -1,0 +1,50 @@
+
+.container{
+    width: 1000px;
+    height: 600px;
+}
+
+.container-2{
+    width: 60px;
+    height: 60px;
+    float: right;
+}
+
+
+.row-2{
+    height: 10%;
+    /* width: 100%; */
+}
+
+.div-2{
+    width: 10%;
+}
+
+.logo{
+    position: relative;
+    top: 70px;
+    left: 300px;
+}
+
+.search{
+    position: relative;
+    top: 70px;
+    left: 230px;
+}
+
+.button{
+    position: relative;
+    top: 90px;
+    left: 370px;
+}
+
+#button-2{
+    top: 100px;
+    left: 400px;
+}
+
+.bottom{
+    background-color: rgba(128, 128, 128, 0.226);
+    border: 1px solid rgba(128, 128, 128, 0.151);
+    width: 1000px;
+}

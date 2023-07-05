@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice1</title>
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+
+    <style>
+
+        #container{
+            display: inline-block;
+            width: 650px;
+            margin-bottom: 20px;
+        }
+
+        #category{
+            width: 676px;
+            height: 150px;
+            border: 2px solid tomato;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Practice1</h1>
+
+        <fieldset id="container">
+            <legend>취미</legend>
+                <table>
+                    <tr class="hobby">
+                        <td>
+                            <input type="checkbox" id="selectAll" name="select" value="전체선택">
+                            <label for="selectAll">전체선택</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="all" name="hobby" value="종합">
+                            <label for="all">종합</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="novel" name="hobby" value="소설">
+                            <label for="novel">소설</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="poem" name="hobby" value="시/에세이">
+                            <label for="poem">시/에세이</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="economics" name="hobby" value="경제/경영">
+                            <label for="economics">경제/경영</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="selfDevelopment" name="hobby" value="자기계발">
+                            <label for="selfDevelopment">자기계발</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="kids" name="hobby" value="아동">
+                            <label for="kids">아동</label>
+                        </td>
+                    </tr>
+
+                    <tr class="hobby">
+                        <td>
+                        </td>
+                        <td class="hobby">
+                            <input type="checkbox" id="travel" name="hobby" value="여행">
+                            <label for="travel">여행</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="science" name="hobby" value="과학">
+                            <label for="science">과학</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="history" name="hobby" value="역사/문화">
+                            <label for="history">역사/문화</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="foreignLan" name="hobby" value="외국어">
+                            <label for="foreignLan">외국어</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="computer" name="hobby" value="컴퓨터">
+                            <label for="computer">컴퓨터</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="comics" name="hobby" value="만화">
+                            <label for="comics">만화</label>
+                        </td>
+                    </tr>
+                </table>
+        </fieldset>
+    
+        <div>
+            <button type="button" id="btn">카테고리 선택</button>
+            <div id="category"></div>
+        </div>
+    
+    <script>
+        const hobby = $("input[name='hobby']");
+        const selectAll = $("#selectAll");
+        const category = $("#category");
+        const btn = $("#btn");
+
+        // 전체 선택
+        $(document).ready(function(){
+            selectAll.on("click", function(){
+                if(selectAll.prop("checked")){
+                    hobby.prop("checked", true);
+
+                }else{
+                    hobby.prop("checked", false);
+                }
+            });
+
+            hobby.on("click", function(){
+                if($("input[name='select']:checked").length == hobby.length){
+                    selectAll.prop("checked", true);
+
+                } else{
+                    selectAll.prop("checked", false);
+                }
+
+            });
+
+        });
+
+        // 카테고리 선택
+        btn.on("click", function(){
+
+            let str = "";
+
+            for(let i=0; i<hobby.length; i++){
+
+                if($(hobby[i]).prop("checked")){
+                    str += $(hobby[i]).val() + " ";
+                }
+            }
+            category.text(str);
+        })
+
+    </script>
+</body>
+</html>

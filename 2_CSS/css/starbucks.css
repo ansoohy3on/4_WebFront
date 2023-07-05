@@ -1,0 +1,347 @@
+* {box-sizing: border-box;}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Pretendard-Regular';
+}
+
+.container{
+    width: 1850px;
+    margin: auto;
+}
+
+/* header */
+.header{
+    height: 150px;
+    display: flex;
+    background-color: #F6F5EF;
+}
+
+.logo{
+    flex-basis: 10%;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-size{
+    width: 110px;
+}
+
+.main-menu{
+    flex-basis: 50%;
+}
+
+.menu1{
+    height: 50%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-size: 18px;
+}
+
+.menu2{
+    height: 50%;
+
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-size: 18px;
+}
+
+.upper-blank{
+    flex-basis: 20%;
+}
+
+#btn-style{
+    height: 40px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.342);
+    border-radius: 6px;
+}
+
+
+/* content */
+.content{
+    height: 749px;
+}
+
+.fixed-area1{
+    width: 150px;
+
+    text-align: center;
+
+    position: fixed;
+
+    top: 200px;
+    right: 100px;
+}
+
+.fixed-area2{
+    width: 150px;
+
+    text-align: center;
+
+    position: fixed;
+
+    top: 295px;
+    right: 100px;
+}
+
+.content-image{
+    height: 650px;
+}
+
+#summer{
+    color: white;
+    font-size: 70px;
+    font-weight: 900;
+
+    position: relative;
+    top: 150px;
+    left: 160px;
+}
+
+.banner-right{
+    width: 70%;
+    display: flex;
+    justify-content: end;
+}
+
+#content-button{
+    width: 30%;
+    border: 3px solid white;
+    border-radius: 15px;
+    background-color: #EBA1B8;
+    color: white;
+    font-size: 20px;
+    width: 160px;
+    height: 50px;
+
+    position: relative;
+    bottom: 262px;
+    left: 340px;
+}
+
+#content-button:hover{
+    position: relative;
+    bottom: 262px;
+    left: 340px;
+
+    border: 3px solid white;
+    border-radius: 15px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    width: 160px;
+    height: 50px;
+
+    transition-duration: 2s;
+
+    cursor: pointer;
+}
+
+.content-bottom{
+    height: 100px;
+    display: flex;
+}
+
+.content-left{
+    flex-basis: 50%;
+
+    background-color: black;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-right{
+    flex-basis: 50%;
+
+    background-color: rgba(245, 245, 220, 0.705);
+    color: rgb(44, 44, 44);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#c-1{
+    flex-basis: 40%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    position: relative;
+    right: 20px;
+
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#c-2{
+    flex-basis: 40%;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+
+    color: white;
+    font-size: 20px;
+}
+
+#c-3{
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#c-4{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#c-5{
+    flex-basis: 50%;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+
+#btn-style2{
+    height: 40px;
+    cursor: pointer;
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 50%;
+}
+
+#btn-style3{
+    height: 40px;
+    cursor: pointer;
+    font-size: 3em;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 50%;
+}
+
+/* footer */
+.footer{
+    height: 300px;
+    display: flex;
+    background-color: #1E3932;
+}
+
+.bottom-blank{
+    flex-basis: 15%;
+}
+
+.footer-logo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-logo-size{
+    width: 190px;
+}
+
+.footer-text{
+    width: 50%;
+}
+
+.font-size-1{
+    color: white;
+    font-size: 30px;
+
+    position: relative;
+    top: 40px;
+}
+
+.font-size-2{
+    color: white;
+    font-size: 20px;
+
+    position: relative;
+    top: 60px;
+}
+
+.font-size-3{
+    color: white;
+    font-size: 18px;
+    position: relative;
+    top: 100px;
+}
+
+.footer-button-1{
+    height: 40px;
+    width: 100px;
+    font-size: 18px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(44, 131, 112);
+    border: 3px solid rgba(0, 0, 0, 0);
+    border-radius: 10px;
+
+    position: relative;
+    top: 100px;
+}
+
+.footer-button-2{
+    height: 40px;
+    width: 100px;
+    font-size: 18px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: #1E3932;
+    border: 3px solid white;
+    border-radius: 10px;
+
+    position: relative;
+    top: 100px;
+}
+
+.footer-button-3{
+    height: 40px;
+    width: 210px;
+    font-size: 18px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: #1E3932;
+    border: 3px solid white;
+    border-radius: 10px;
+
+    position: relative;
+    top: 150px;
+}
+
+.footer-button{
+    width: 20%;
+}
+

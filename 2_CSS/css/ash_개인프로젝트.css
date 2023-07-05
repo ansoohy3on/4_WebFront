@@ -1,0 +1,30 @@
+* {box-sizing: border-box;}
+
+section { border: 1px solid black; }
+
+main{
+    width: 1140px;
+    margin: auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 900px;
+    height: 585px;
+    background-color: rgba(248, 239, 255, 0.7);
+}
+
+main > .content > section:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > .content > section:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

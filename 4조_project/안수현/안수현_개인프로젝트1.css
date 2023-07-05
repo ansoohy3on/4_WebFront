@@ -1,0 +1,113 @@
+* {box-sizing: border-box;}
+
+/* section { border: 1px solid black; } */
+
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'NanumSquareNeo-Variable';
+}
+
+main{
+    width: 1140px;
+    height: 900px;
+    margin: auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 1000px;
+    height: 750px;
+    background-color: rgba(248, 239, 255, 0.7);
+}
+
+main > .content > section:first-child{
+    height: 270px;
+}
+
+main > .content > section:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > .content > section:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#id-pw-area{
+    border: none;
+}
+
+main #id-pw-area > section {
+    margin: 7px;
+}
+
+main form input{
+    border: 0;
+    outline: 0;
+
+    height: 25px;
+}
+
+#id-pw-area input:focus{
+    border: 1.5px solid rgb(160, 175, 210);
+}
+
+#login-btn{
+    width: 85px;
+    height: 24.5px;
+
+    background-color: #D6D0F0;
+    color: white;
+
+    border-radius: 5px;
+    border: none;
+    
+    cursor: pointer;
+
+    transition-duration: 1s;
+
+    position: relative;
+    left: 20px;
+    bottom: 1.7px;
+}
+
+#login-btn:hover{
+    background-color: rgb(160, 175, 210);
+    color: white;
+}
+
+#signUp-btn{
+    width: 85px;
+    height: 25px;
+
+    background-color: #D6D0F0;
+    color: white;
+
+    border-radius: 5px;
+    border: none;
+    
+    cursor: pointer;
+
+    transition-duration: 1s;
+    
+    position: relative;
+    bottom: 26.5px;
+    left: 505px;
+}
+
+#signUp-btn:hover{
+    background-color: rgb(160, 175, 210);
+    color: white;
+}

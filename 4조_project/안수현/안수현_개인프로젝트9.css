@@ -1,0 +1,126 @@
+* {box-sizing: border-box;}
+
+/* section { border: 1px solid black; } */
+
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'NanumSquareNeo-Variable';
+}
+
+main{
+    width: 1140px;
+    height: 900px;
+    margin: auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 1000px;
+    height: 750px;
+    background-color: rgba(248, 239, 255, 0.7);
+}
+
+main > .content > section:first-child{
+    height: 95px;
+}
+
+/* 로고 */
+
+main > .content > section:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 회원 가입 영역 */
+
+main > .content > section:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+#signUp-area{
+    border: 1px solid rgb(160, 175, 210);
+    width: 600px;
+    height: 380px;
+    padding-top: 27px;
+}
+
+#signUp-area input{
+    border: 0;
+    outline: 0;
+
+    height: 25px;
+}
+
+#signUp-area input:focus{
+    border: 1.5px solid rgb(160, 175, 210);
+}
+
+#signUp-area > legend{
+    text-align: center;
+    color: rgb(160, 175, 210);
+}
+
+.title{
+    color: rgb(160, 175, 210);
+    font-size: 14px;
+    margin: 8px;
+
+    margin-left: 170px;
+}
+
+.content-1 input{
+    width: 140px;
+}
+
+.content-1 button{
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(160, 175, 210);
+    color: white;
+
+    margin-left: 4px;
+    height: 20px;
+
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+.content-1 button:hover{
+    background-color: rgb(214, 208, 240);
+}
+
+.name{
+    margin-top: 30px;
+}
+
+.submit-btn{
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(160, 175, 210);
+    color: white;
+
+    margin-left: 250px;
+    margin-top: 15px;
+    height: 26px;
+
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+.submit-btn:hover{
+    background-color: rgb(214, 208, 240);
+}
